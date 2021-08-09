@@ -69,8 +69,7 @@ function printQuote () {
   let randomObject = getRandomQuote();
   let html = `
     <p class="quote">${randomObject.quote}</p>
-    <p class="source">${randomObject.source}
-    `;
+    <p class="source">${randomObject.source}`;
   if (randomObject.citation){
      let citationHTML = `<span class=citation>${randomObject.citation}</span>`;
      html = html.concat(citationHTML);
@@ -79,7 +78,7 @@ function printQuote () {
      let yearHTML = `<span class=year>${randomObject.year}</span>`;
      html = html.concat(yearHTML);
   }
-  html = html.concat(`</p>`);;
+  html = html.concat(`</p>`);
   return document.getElementById('quote-box').innerHTML = html; 
 }
 
