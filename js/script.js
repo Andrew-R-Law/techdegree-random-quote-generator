@@ -114,3 +114,9 @@ document.getElementById('load-quote').addEventListener("click", printQuote, fals
 /* Changes the background color to the random background color when the button is clicked by the user.*/
  
 document.getElementById('load-quote').addEventListener("click", randomBackgroundColor, false);
+
+/* Changes the quote and the background color every 20 seconds */
+setInterval(function() {
+  printQuote();
+  randomBackgroundColor();
+}, 20000);
