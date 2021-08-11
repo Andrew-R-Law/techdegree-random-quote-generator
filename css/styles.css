@@ -8,7 +8,7 @@
 body {
   background-color: rgb(58, 193, 98);
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   padding: 5px;
 }
 
@@ -112,6 +112,15 @@ h1 {
 
 .year:before {
   content: ", ";
+  font-style: normal;
+}
+
+.category {
+  font-style: italic;
+}
+
+.category:before {
+  content: ', ';
   font-style: normal;
 }
 
